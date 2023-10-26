@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- A meta tag keywords é utilizada para informar ao navegador as palavras chaves do site, para assim aparecerem nas buscas -->
+    <meta name="keywords" content="Portfolio, perfil, desenvolvimento, web, carreira">
+    <!-- A meta tag description é utilizada para definir a descrição do site na busca -->
+    <meta name="description" content=" Perfil de trabalho com desenvolvimento para portfólio ">
+    <!-- A meta tag author define o autor da página Web -->
+    <meta name="author" content="Alisson Sanches">
+    <title>Meu Perfil</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fontes Utilzadas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Carrosel -->
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+</head>
+<body>
+    <!-- Inicio do Cabeçalho -->
+    <header id="cabecalho">
+        <div id="topo">
+               <nav id="navegacao">
+                    <ul class="itens">
+                        <li>
+                            <a href="#" target="_self" class="linkmenu">HOME</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_self" class="linkmenu">SKILLS</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_self" class="linkmenu">PORTFÓLIO</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_self" class="linkmenu">CONTACT</a>
+                        </li>
+                    </ul>
+    
+                    <!-- MENU MOBILE -->
+                    <select name="menu-mobile" id="menu-mobile" onChange="if(this.selectedIndex!=0)self.location=this.options[this.selectedIndex].value">
+                        <option>Navegação</option>
+                        <option value="index.html">HOME</option>
+                        <option value="index.html">SKILLS</option>
+                        <option value="index.html">PORTFÓLIO</option>
+                        <option value="index.html">CONTACT</option>
+                    </select>
+                </nav>
+
+                <!-- Inicio Conteúdo-Perfil -->
+                <section id="conteudo-perfil">
+                    <div id="imagem-perfil">
+                        <img src="Imagens/perfil.jpg ">
+                    </div>
+                    <h1>Alisson Fernand</h1>
+                    <p><span class="negrito">born:</span> 19/11/2002</p>
+                    <p><span class="negrito">E-mail:</span> alissonsanches19@hotmail.com</p>
+        
+                    <nav id="navegacao-social">
+                        <ul>
+                            <li>
+                                <a href="#Instagram" target="_self" class="linksocial"
+                                title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="#Linkedin" target="_self" class="linksocial" title="Linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                                <a href="#Github" target="_self" class="linksocial" title="#Github"><i class="fa-brands fa-github"></i></a>
+                            </li>
+                            <li>
+                                <a href="#Twitter" target="_self" class="linksocial" title="twitter"><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
+                        <p><span class="negrito" id="abaixo">All:</span> Tecnologia da Informação</p>
+                        <div class="clearfix"></div>
+                </section>
+                <!-- Final Conteúdo-Perfil -->
+        </div>
+    </header>
+    <!-- Final do Cabeçalho -->
+
+    <h2 id="skill">Skills</h2>
+
+    <!-- Inicio Conteúdo -->
+    
+    <section id="principal">
+        <section id="skills">
+            <div class="conter">
+            <div id="esquerda">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae esse eligendi 
+                    fugit ducimus cum, labore exercitationem consequuntur enim quod iste.
+                </p>
+            </div>
+            <div id="direita">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo magnam adipisci nesciunt
+                    tenetur quidem aliquam, enim a assumenda id blanditiis!
+                </p>
+            </div>
+            <div class="owl-carousel owl-theme">
+                <div class="item"> <img src="Imagens/Planeta.jpg" alt=""> </div>
+                <div class="item"> <img src="Imagens/Planeta.jpg" alt=""> </div>
+                <div class="item"> <img src="Imagens/Planeta.jpg" alt=""> </div>
+                <div class="item"> <img src="Imagens/Planeta.jpg" alt=""> </div>
+                <div class="item"> <img src="Imagens/Planeta.jpg" alt=""> </div>
+                <div class="item"> <img src="Imagens/Planeta.jpg" alt=""> </div>
+            </div>
+            </div>
+        </section>
+
+        <h2 id="tt-portfolio">Portfólio</h2>
+        <p><span id="work">My Works</span></p>
+
+        <section id="portfolio">
+            <!-- MENU MOBILE -->
+            <select name="menu-portfolio" id="menu-portfolio" onChange="if(this.selectedIndex!=0)self.location=this.options[this.selectedIndex].value">
+                <option>Sites e Aplicativos</option>
+                <option value="index.html">Logotipos</option>
+                <option value="index.html">Embalagem</option>
+                <option value="index.html">Papelarias</option>
+                <option value="index.html">3D</option>
+            </select>
+
+
+            <!-- Inicio Projetos -->
+            <div class="raw">
+                <div class="conter">
+                <div class="projetos">
+                    <a href="#" target="_self" class="bloco">
+                        <img src="Imagens/Notebook.jpg" alt="Imagem-Conteudo">
+                        <p>Rocket</p>
+                    </a>
+                </div>
+
+
+                <div class="projetos">
+                    <a href="#" target="_self" class="bloco">
+                        <img src="Imagens/Notebook.jpg" alt="Imagem-Conteudo">
+                        <p>Adote um amigo</p>
+                    </a>
+                </div>
+        
+
+                <div class="projetos">
+                    <a href="#" target="_self" class="bloco">
+                        <img src="Imagens/Notebook.jpg" alt="Imagem-Conteudo">
+                        <p>Pet Coelho</p>
+                    </a>
+                </div>
+
+
+                <div class="projetos">
+                    <a href="#" target="_self" class="bloco">
+                        <img src="Imagens/Notebook.jpg" alt="Imagem-Conteudo">
+                        <p>Pokedex</p>
+                    </a>
+                </div>
+
+                <div class="projetos">
+                    <a href="#" target="_self" class="bloco">
+                        <img src="Imagens/Notebook.jpg" alt="Imagem-Conteudo">
+                        <p>Motors</p>
+                    </a>
+                </div>
+
+                <div class="projetos">
+                    <a href="#" target="_self" class="bloco">
+                        <img src="Imagens/Notebook.jpg" alt="Imagem-Conteudo">
+                        <p>Ferrari</p>
+                    </a>
+                </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <!-- Final Projetos -->
+        </section>
+    </section>
+    <!-- Final Conteúdo -->
+
+    <!-- Inicio Rodapé -->
+    <footer id="rodape">
+        <div id="copy">
+            &copy; Copyright 2023 - Todos os direitos reservados
+        </div>
+    </footer>
+    <!-- Final Rodapé -->
+
+    <!-- Script Carrossel -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:5,
+            nav:true,
+            loop:false
+        }
+    }
+})
+        });
+        </script>
+</body>
+</html>
